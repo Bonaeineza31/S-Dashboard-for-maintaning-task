@@ -1,0 +1,128 @@
+.home-container {
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .board-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e4e4e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .add-task-btn {
+    padding: 12px 24px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .more-options {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #6b7280;
+    padding: 8px;
+  }
+  
+  .board-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+  }
+  
+  .column {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .column-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+  
+  .column-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .column-indicator.todo {
+    background-color: #60a5fa;
+  }
+  
+  .column-indicator.doing {
+    background-color: #7c3aed;
+  }
+  
+  .column-indicator.done {
+    background-color: #34d399;
+  }
+  
+  .task-card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .task-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .subtasks {
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  .new-column {
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-column-btn {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f5;
+    border: none;
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-column-btn:hover {
+    background-color: #e4e4e7;
+  }

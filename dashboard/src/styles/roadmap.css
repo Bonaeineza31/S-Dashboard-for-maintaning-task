@@ -1,0 +1,118 @@
+.roadmap-container {
+    padding: 24px;
+    height: 100%;
+  }
+  
+  .board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .add-task-btn {
+    background: #635FC7;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .more-options {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dots {
+    font-size: 24px;
+    color: #828FA3;
+  }
+  
+  .board-content {
+    display: flex;
+    gap: 24px;
+    height: calc(100vh - 120px);
+    overflow-x: auto;
+  }
+  
+  .column {
+    min-width: 280px;
+    width: 280px;
+  }
+  
+  .column-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .column-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  .column-indicator.now {
+    background: #49C4E5;
+  }
+  
+  .column-indicator.next {
+    background: #8471F2;
+  }
+  
+  .column-indicator.later {
+    background: #67E2AE;
+  }
+  
+  .task-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .task-card h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .task-card .subtasks {
+    color: #828FA3;
+    font-size: 12px;
+  }
+  
+  .new-column {
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(99, 95, 199, 0.1);
+    border-radius: 6px;
+    margin-top: 39px;
+  }
+  
+  .add-column-btn {
+    background: none;
+    border: none;
+    color: #635FC7;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 32px;
+  }
+  
+  /* Dark mode styles can be added here */
+  .dark-mode .task-card {
+    background: #2B2C37;
+    color: white;
+}
