@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import { BsSunFill } from "react-icons/bs";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { CgProfile } from "react-icons/cg";
+import { PiDotsSixVerticalLight } from "react-icons/pi";
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,22 +19,22 @@ const Navbar = () => {
     <nav className={`navbar ${isDarkMode ? 'dark' : ''} ${isSidebarHidden ? 'hidden' : ''}`}>
       <div className="nav-header">
         <div className="user-section">
-          <div className="user-avatar"></div>
+          <div className="user-avatar"><CgProfile /></div>
           <span>Log In</span>
         </div>
       </div>
       
       <div className="nav-links">
         <Link to="/" className="nav-item active">
-          <span className="icon">📊</span>
+          <span className="icon"><PiDotsSixVerticalLight /></span>
           Platform Launch
         </Link>
         <Link to="/marketing" className="nav-item">
-          <span className="icon">📈</span>
+          <span className="icon"><PiDotsSixVerticalLight /></span>
           Marketing Plan
         </Link>
         <Link to="/roadmap" className="nav-item">
-           <span className="icon">🗺️</span>
+           <span className="icon"><PiDotsSixVerticalLight /></span>
           Roadmap
         </Link>
       </div>
